@@ -1,0 +1,459 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+cinit CODE 0 7F2 7F2 E 2
+text1 CODE 0 719 719 D9 2
+text7 CODE 0 611 611 19 2
+text8 CODE 0 62A 62A 21 2
+maintext CODE 0 64B 64B CE 2
+cstackCOMMON COMMON 1 70 70 9 1
+bssBANK0 BANK0 1 20 20 4 1
+strings STRING 0 3 3 39 2
+bssCOMMON COMMON 1 79 79 4 1
+$C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+end_init CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 24-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 24-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3C-610 2
+CONST 800-1FFF 2
+ENTRY 3C-610 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3C-610 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7D-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3C-610 2
+STRCODE 800-1FFF 2
+STRING 3C-610 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+7F2 cinit CODE >300:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7F2 cinit CODE >303:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7F2 cinit CODE >326:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7F3 cinit CODE >327:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7F4 cinit CODE >328:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7F5 cinit CODE >329:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7F6 cinit CODE >332:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7F7 cinit CODE >333:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7F8 cinit CODE >334:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7F9 cinit CODE >335:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7FA cinit CODE >336:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7FB cinit CODE >337:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7FC cinit CODE >343:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7FC cinit CODE >345:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+7FD cinit CODE >346:C:\Users\Sharuka\AppData\Local\Temp\s6g.
+62A text8 CODE >91:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+62B text8 CODE >94:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+635 text8 CODE >95:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+63C text8 CODE >97:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+63F text8 CODE >100:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+640 text8 CODE >103:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+640 text8 CODE >105:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+642 text8 CODE >108:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+64A text8 CODE >109:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+611 text7 CODE >51:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+611 text7 CODE >53:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+612 text7 CODE >54:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+613 text7 CODE >55:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+615 text7 CODE >56:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+616 text7 CODE >59:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+617 text7 CODE >60:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+618 text7 CODE >61:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+619 text7 CODE >62:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+61A text7 CODE >65:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+61C text7 CODE >66:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+61D text7 CODE >67:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+61E text7 CODE >70:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+61F text7 CODE >71:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+620 text7 CODE >72:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+621 text7 CODE >75:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+622 text7 CODE >76:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+623 text7 CODE >77:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+624 text7 CODE >80:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+625 text7 CODE >81:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+626 text7 CODE >82:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+627 text7 CODE >85:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+628 text7 CODE >88:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+629 text7 CODE >89:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+719 text1 CODE >130:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+71A text1 CODE >133:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+727 text1 CODE >134:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+732 text1 CODE >133:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+736 text1 CODE >114:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+737 text1 CODE >117:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+73A text1 CODE >118:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+73E text1 CODE >119:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+73F text1 CODE >120:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+744 text1 CODE >121:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+745 text1 CODE >122:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+74A text1 CODE >123:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+74D text1 CODE >124:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+751 text1 CODE >125:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+752 text1 CODE >126:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+757 text1 CODE >127:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+75A text1 CODE >128:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+75B text1 CODE >74:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+75C text1 CODE >77:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+75E text1 CODE >79:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+763 text1 CODE >82:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+766 text1 CODE >83:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+768 text1 CODE >85:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+76C text1 CODE >87:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+771 text1 CODE >90:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+774 text1 CODE >91:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+776 text1 CODE >95:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+776 text1 CODE >97:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+77A text1 CODE >98:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+783 text1 CODE >99:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+787 text1 CODE >100:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+790 text1 CODE >101:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+794 text1 CODE >102:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+79C text1 CODE >103:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7A0 text1 CODE >105:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7A4 text1 CODE >106:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7A8 text1 CODE >107:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7AC text1 CODE >108:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7B0 text1 CODE >109:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7B4 text1 CODE >110:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7B8 text1 CODE >111:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7BA text1 CODE >59:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7BB text1 CODE >61:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7BE text1 CODE >62:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7C2 text1 CODE >63:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7C3 text1 CODE >64:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7CC text1 CODE >65:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7CF text1 CODE >66:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7D0 text1 CODE >37:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7D1 text1 CODE >39:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7D3 text1 CODE >40:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7D6 text1 CODE >41:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7D6 text1 CODE >42:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7D8 text1 CODE >44:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7DA text1 CODE >45:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7DC text1 CODE >46:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7DC text1 CODE >47:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7DD text1 CODE >49:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7DF text1 CODE >50:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7E1 text1 CODE >51:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7E1 text1 CODE >52:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7E2 text1 CODE >54:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7E4 text1 CODE >55:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7E6 text1 CODE >56:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7E6 text1 CODE >57:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+7E7 text1 CODE >58:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\config.h
+64B maintext CODE >112:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+64B maintext CODE >113:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+64D maintext CODE >114:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+64F maintext CODE >115:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+652 maintext CODE >118:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+653 maintext CODE >119:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+658 maintext CODE >121:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+65D maintext CODE >127:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+667 maintext CODE >128:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+671 maintext CODE >129:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+67C maintext CODE >130:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+687 maintext CODE >133:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+68F maintext CODE >134:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+697 maintext CODE >135:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+698 maintext CODE >136:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+69A maintext CODE >143:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6A2 maintext CODE >144:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6A3 maintext CODE >145:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6A4 maintext CODE >146:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6AC maintext CODE >147:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6AE maintext CODE >151:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6B6 maintext CODE >152:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6B7 maintext CODE >153:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6B8 maintext CODE >154:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6C0 maintext CODE >155:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6C6 maintext CODE >161:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6CE maintext CODE >162:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6D6 maintext CODE >163:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6D7 maintext CODE >164:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6D8 maintext CODE >165:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6E0 maintext CODE >166:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6E6 maintext CODE >169:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6E7 maintext CODE >170:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6EF maintext CODE >171:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6F0 maintext CODE >172:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6F1 maintext CODE >173:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6F9 maintext CODE >174:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+6FF maintext CODE >177:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+700 maintext CODE >178:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+708 maintext CODE >179:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+709 maintext CODE >180:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+70A maintext CODE >181:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+712 maintext CODE >182:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+718 maintext CODE >186:C:\Users\Sharuka\MPLABXProjects\SUNTRACKING_PIC16F877A.X\MainFile.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+_Lcd_Init EEC 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_Lcd_Port FA0 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+PL2 FD0 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__end_of_Lcd_Init F74 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__end_of_Lcd_Port FD0 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+ADC_GetConversion@channel 73 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+_main C96 0 CODE 0 maintext dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__end_of_ADC_GetConversion C96 0 CODE 0 text8 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_Lcd_Write_Char E6C 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+start 0 0 CODE 0 init C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+Lcd_Port@a 70 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+Lcd_Write_Char@temp 72 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_LDR2_Value 79 0 COMMON 1 bssCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+__size_of_Lcd_Set_Cursor 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_Lcd_Write_Char EB6 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__size_of_ADC_Initilize 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_ADRESH 1E 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_ADRESL 9E 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hpa_nodes0 0 0 ABS 0 pa_nodes0 -
+__Lmaintext 0 0 ABS 0 maintext -
+_ADC_GetConversion C54 0 CODE 0 text8 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__end_of_ADC_Initilize C54 0 CODE 0 text7 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Lpa_nodes0 0 0 ABS 0 pa_nodes0 -
+Lcd_Set_Cursor@temp 78 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+start_initialization FE4 0 CODE 0 cinit dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__end_ofPL2 FE4 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_Lcd_Write_String E32 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 10 0 STRING 0 strings dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FE4 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+_LDR3_Value 22 0 BANK0 1 bssBANK0 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RB0 30 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_RB1 31 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_RB2 32 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_RB3 33 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_RD2 42 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_RD3 43 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_RD4 44 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_RD5 45 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_RD6 46 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_RD7 47 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__end_of_Lcd_Write_String E6C 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Lintentry 0 0 CODE 0 intentry -
+__size_of_Lcd_Write_String 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__stringtab 6 0 STRING 0 strings dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+Lcd_Write_String@a 77 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+Lcd_Write_String@i 75 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+__end_of_Lcd_Cmd FA0 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+?_ADC_GetConversion 70 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__size_of_Lcd_Write_Char 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_Lcd_Set_Cursor EB6 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__pmaintext C96 0 CODE 0 maintext dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+stacklo 0 0 ABS 0 - C:\Users\Sharuka\AppData\Local\Temp\s6g.obj
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_ADCON1bits 9F 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__end_of__stringtab 12 0 STRING 0 strings dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 79 0 COMMON 1 bssCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__end_of_Lcd_Set_Cursor EEC 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hintentry 0 0 CODE 0 intentry -
+Lcd_Set_Cursor@a 75 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+Lcd_Set_Cursor@b 74 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+Lcd_Set_Cursor@y 77 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+Lcd_Set_Cursor@z 76 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+_LDR4_Value 20 0 BANK0 1 bssBANK0 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 E32 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__ptext2 E6C 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__ptext3 EB6 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__ptext4 EEC 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__ptext5 F74 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__ptext6 FA0 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__ptext7 C22 0 CODE 0 text7 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__ptext8 C54 0 CODE 0 text8 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__size_of_ADC_GetConversion 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+Lcd_Cmd@a 73 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_LDR1_Value 7B 0 COMMON 1 bssCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__size_of_Lcd_Init 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__size_of_Lcd_Port 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hend_init 6 0 CODE 0 end_init -
+__end_of_main E32 0 CODE 0 maintext dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_PORTB 6 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_TRISD 88 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_Lcd_Cmd F74 0 CODE 0 text1 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__initialization FE4 0 CODE 0 cinit dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+__pstrings 6 0 STRING 0 strings dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+_ADC_Initilize C22 0 CODE 0 text7 dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+Lcd_Write_Char@a 74 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+Lcd_Write_Char@y 73 0 COMMON 1 cstackCOMMON dist/default/production\SUNTRACKING_PIC16F877A.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7F2 FE4 E 2
+text1 0 719 E32 D9 2
+text7 0 611 C22 19 2
+text8 0 62A C54 21 2
+maintext 0 64B C96 CE 2
+cstackCOMMON 1 70 70 D 1
+reset_vec 0 0 0 3 2
+bssBANK0 1 20 20 4 1
+strings 0 3 6 39 2
+config 0 2007 400E 1 2
